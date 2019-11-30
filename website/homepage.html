@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Digital Career Awareness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="form.js"></script>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="apprentice.html">Apprenticeships</a>
+        <a href="graduate.html">Graduate Schemes</a>
+        <a href="secondments.html">Secondments</a>
+        <a href="info.html">Job Roles</a>
+        <a href="signup.html" class="right">Sign Up</a>
+        <a href="#" onclick="openLoginForm()" class="right">Login</a>
+    </div>    
+    <div class="header">
+        <h1>Digital Career Awareness</h1>
+    </div>
+    <div class="login-form-popup" id="myForm">
+            <form  class="form-container">
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn" onclick="checkLogin()">Login</button>
+              <button type="submit" class="btn cancel" onclick="closeLoginForm()">Close</button>
+            </form>
+          </div>
+
+      <div class="personality-test">
+        <a href="https://16personalities.com" target="_blank">Take a Personality Test Here</a>
+        <h1>What was your Personality Test result</h1>
+        <select id="personality-type">
+            <option value="Analyst">Analyst</option>
+            <option value="Diplomat">Diplomat</option>
+            <option value="Sentinel">Sentinel</option>
+            <option value="Explorer">Explorer</option>
+          </select>
+        <button type="submit" class="personality-btn" onclick="displayJobs()">Refresh Jobs</button>
+      </div>
+      <div class="tooltip">
+        <div class="analyst-job" id="analyst-job">
+          <div class="column">
+            <a href="https://careers.willistowerswatson.com/early-careers/apprenticeships/" target="_blank">
+              Data Analyst Apprentice Willis Towers Watson
+            </a>
+            <span class="analyst1"><br>Data Analyst<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+          <div class="column">
+            <a href="https://lifeatexpedia.com/" target="_blank">
+              Data Analyst Apprentice Expedia Group
+            </a>
+            <span class="analyst2"><br>Data Analyst<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+          <div class="column">
+            <a href="https://www.teachfirst.org.uk/working-teach-first/vacancies" target="_blank">
+              Data Analyst Apprentice Teach First
+            </a>
+            <span class="analyst3"><br>Data Analyst<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+        </div>
+
+
+        <div class="diplomat-job" id="diplomat-job">
+          <div class="column">
+            <a href="https://www2.deloitte.com/uk/en/pages/careers/articles/brightstart-business-apprenticeship-scheme.html" target="_blank">
+              BrightStart Consulting Apprenticeship Deloitte
+            </a>
+            <span class="diplomat1"><br>Consultant<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+          <div class="column">
+            <a href="https://www.capgemini.com/gb-en/careers/jobs/business-degree-apprenticeship-project-management-office-technology-project-consultant-2020/" target="_blank">
+              Business Degree Apprenticeship Capgemini 
+            </a>
+            <span class="diplomat2"><br>Technology Project Consultant<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+          <div class="column">
+            <a href="https://careers.willistowerswatson.com/early-careers/apprenticeships/" target="_blank">
+              Management Consultant Apprenticeship Willis Towers Watson
+            </a>
+            <span class="diplomat3"><br>Management Consultant<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+        </div>
+
+
+        <div class="sentinel-job" id="sentinel-job">
+          <div class="column">
+            <a href="https://www.metaswitch.com/careers-blog/software-engineering-apprenticeship" target="_blank">
+              Software Engineering Apprenticeship Metaswitch
+            </a>
+            <span class="sentinel1"><br>Software Engineer<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+          <div class="column">
+            <a href="https://www2.deloitte.com/uk/en/pages/careers/articles/brightstart-business-apprenticeship-scheme.html?icid=wn_brightstart-business-apprenticeship-scheme" target="_blank">
+              Software Engineering Apprenticeship Deloitte
+            </a>
+            <span class="sentinel2"><br>Software Engineer<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+          <div class="column">
+            <a href="https://careers.google.com/jobs/results/119840073102303942-software-development-apprenticeship-engineering/?company=Google&company=Google%20Fiber&company=YouTube&hl=en_US&jlo=en_US&location=London,%20UK&q=apprenticeship&sort_by=relevance" target="_blank">
+              Software Engineering Apprenticeship Google
+            </a>
+            <span class="sentinel3"><br>Software Engineer<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+        </div>
+
+        
+        <div class="explorer-job" id="explorer-job">
+          <div class="column">
+            <a href="https://centreforapprenticeships.co.uk/vacancy/1597611/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic" target="_blank">
+              Network and Communications Analyst Apprenticeship ACAS
+            </a>
+            <span class="explorer1"><br><br>Network and Communications Analyst<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+          <div class="column">
+            <a href="https://www.google.com/search?q=data+communications+analyst+apprenticeship&rlz=1C1CHBF_en-GBGB871GB872&oq=data+communications+analyst+appre&aqs=chrome.1.69i57j33l2.11051j0j7&sourceid=chrome&ie=UTF-8&ibp=htl;jobs#htidocid=zxsHoWFNPgYk98evAAAAAA%3D%3D&htivrt=jobs&fpstate=tldetail" target="_blank">
+              Network and Communications Analyst Apprenticeship Civil-Service
+            </a>
+            <span class="explorer2"><br>Network and Communications Analyst<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+          <div class="column">
+            <a href="https://www.google.com/search?q=data+communications+analyst+apprenticeship&rlz=1C1CHBF_en-GBGB871GB872&oq=data+communications+analyst+appre&aqs=chrome.1.69i57j33l2.11051j0j7&sourceid=chrome&ie=UTF-8&ibp=htl;jobs#htidocid=zxsHoWFNPgYk98evAAAAAA%3D%3D&htivrt=jobs&fpstate=tldetail" target="_blank">
+              IT Support & Communications Analyst Apprenticeship Government
+            </a>
+            <span class="explorer3"><br>IT Support & Communications Analyst<br><br>Salary: ****<br><br>Hours: ****</span>
+          </div>
+        </div>
+      </div>
+      
+</body>
+<script>
+    function displayJobs() {
+      console.log(document.getElementById("personality-type").value);
+      resetJobs();
+      if (document.getElementById("personality-type").value === "Analyst") {
+        document.getElementById("analyst-job").style.display = "block";
+      }
+      else if (document.getElementById("personality-type").value === "Diplomat") {
+        document.getElementById("diplomat-job").style.display = "block";
+      }
+      else if (document.getElementById("personality-type").value === "Sentinel") {
+        document.getElementById("sentinel-job").style.display = "block";
+      }
+      else if (document.getElementById("personality-type").value === "Explorer") {
+        document.getElementById("explorer-job").style.display = "block";        
+      }
+    }    
+    function resetJobs() {
+      document.getElementById("analyst-job").style.display = "none";
+      document.getElementById("diplomat-job").style.display = "none";
+      document.getElementById("sentinel-job").style.display = "none";
+      document.getElementById("explorer-job").style.display = "none";        
+    }
+</script>
+</html>

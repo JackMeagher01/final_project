@@ -1,0 +1,15 @@
+<script> // script tag on front
+const url='http://localhost:3000/api'; //specifies the url for getting data
+fetch(url,{mode:"no-cors"}) //turned off cors, figure this out for security points
+.then(data=>data.json()) //parses the json we're getting sent
+.then(res=>res.data.map(x=>document.getElementById('data').innerHTML+=(x)+"<br>")) //
+//this maps through the 'data' array we've provided from the frontend, and puts all info into the htm of the div tag
+</script>
+<head></head> <!-- nothing in the header huh-->
+<body>
+    <div id="data"> <!-- data will get appended to this div-->
+        <em>Data Returned:</em><br><!-- the only thing on the original page-->
+        <!--data gets added here-->
+    </div>
+
+</body>

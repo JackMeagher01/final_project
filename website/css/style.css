@@ -1,0 +1,230 @@
+.header {
+    padding: 80px; 
+    text-align: center; 
+    background: teal; 
+    color: white; 
+  }
+  
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden; 
+    background-color: #333; 
+  }  
+  
+  .navbar a {
+    float: left; 
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 20px;
+    text-decoration: none; 
+  }
+  
+  .navbar a.right {
+    float: right; 
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd; 
+    color: black;
+  }
+
+  .personality-test {
+    overflow: hidden;
+    background-color: #555;
+    text-align: center;
+  }
+
+  .personality-test a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  .personality-test select{
+    height: 30px;
+    width: 200px;
+    align-content: center;
+  }
+
+  .personality-test h1{
+    color: white;
+    padding: 14px 20px;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    background-color: #555;
+    border: #333;
+    color: white;
+    text-align: center;
+    opacity: 1;
+  }
+
+  .column:hover {
+    opacity: 0.8;
+  }
+
+  .tooltip .analyst1, .tooltip .analyst2, .tooltip .analyst3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  }
+  
+  .tooltip:hover .analyst1, .tooltip:hover .analyst2, .tooltip:hover .analyst3 {
+    visibility: visible;
+  }
+
+  .tooltip .diplomat1, .tooltip .diplomat2, .tooltip .diplomat3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  }
+  
+  .tooltip:hover .diplomat1, .tooltip:hover .diplomat2, .tooltip:hover .diplomat3 {
+    visibility: visible;
+  }
+
+  .tooltip .sentinel1, .tooltip .sentinel2, .tooltip .sentinel3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  }
+  
+  .tooltip:hover .sentinel1, .tooltip:hover .sentinel2, .tooltip:hover .sentinel3 {
+    visibility: visible;
+  }
+
+  .tooltip .explorer1, .tooltip .explorer2, .tooltip .exlporer3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  }
+  
+  .tooltip:hover .explorer1, .tooltip:hover .explorer2, .tooltip:hover .explorer3 {
+    visibility: visible;
+  }
+
+  .tooltip a{
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.login-form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.signup-form-popup {
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid #f1f1f1;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.personality-test .personality-btn {
+  background-color: white;
+  color: #555;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.diplomat-job {
+  display: none;
+}
+
+.sentinel-job {
+  display: none;
+}
+
+.explorer-job {
+  display: none;
+}

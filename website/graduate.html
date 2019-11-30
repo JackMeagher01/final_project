@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Digital Career Awareness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="form.js"></script>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="apprentice.html">Apprenticeships</a>
+        <a href="graduate.html">Graduate Schemes</a>
+        <a href="secondments.html">Secondments</a>
+        <a href="info.html">Job Roles</a>
+        <a href="signup.html" class="right">Sign Up</a>
+        <a href="#" onclick="openLoginForm()" class="right">Login</a>
+    </div>    
+    <div class="header">
+        <h1>Graduate Schemes</h1>
+    </div>
+    
+    <div class="login-form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="submit" class="btn cancel" onclick="closeLoginForm()">Close</button>
+            </form>
+          </div>
+</body>
+</html>
